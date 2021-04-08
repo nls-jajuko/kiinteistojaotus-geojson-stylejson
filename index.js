@@ -18,9 +18,6 @@ const map = new Map({ target: 'map' }),
   });
 
 
-
-window.map = map;
-
 apply(
   map, featuresStyle).then(function (map) {
 
@@ -44,3 +41,5 @@ apply(
       });
     });
   });
+
+window.map = map;
