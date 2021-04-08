@@ -1,9 +1,10 @@
 import 'ol/ol.css';
 import FullScreen from 'ol/control/FullScreen';
-import apply from 'ol-mapbox-style';
+import apply from './mbox-apply';
 import Map from 'ol/Map';
 import featuresStyle from './data/style.json';
 import GeoJSON from 'ol/format/GeoJSON';
+
 import { features } from './features';
 import { transform } from 'ol/proj';
 
@@ -15,6 +16,7 @@ const map = new Map({ target: 'map' }),
     featureProjection: 'EPSG:3857',
     dataProjection: 'EPSG:4326'
   });
+
 
 
 window.map = map;

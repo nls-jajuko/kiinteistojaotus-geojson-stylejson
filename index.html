@@ -15,6 +15,14 @@
 </head>
 
 <body>
+  <div id="buttons">
+    <button onclick="getOLLayer(map,'polygonstyle').setVisible(true)">Show VectorLayer</button>
+    <button onclick="getOLLayer(map,'polygonstyle').setVisible(false)">Hide VectorLayer</button> |
+    <button onclick="setMboxLayoutProperty(map,'polygonstyle','visibility','visible')">Show Mapbox Layer 'palsta'</button>
+    <button onclick="setMboxLayoutProperty(map,'polygonstyle','visibility','none')">Hide Mapbox Layer 'palsta''</button> |
+    <button onclick="setMboxLayoutProperty(map,'pointstyle','visibility','visible')">Show Mapbox Layer 'tunnuspiste'</button>
+    <button onclick="setMboxLayoutProperty(map,'pointstyle','visibility','none')">Hide Mapbox Layer 'tunnuspiste'</button>
+  </div>
   <div id="map" class="map"></div>
   <!-- template for generated content -->
   <script>
