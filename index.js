@@ -30,7 +30,11 @@ apply(
         lb = transform([bounds[0], bounds[1]], 'EPSG:3857', 'EPSG:4326'),
         rt = transform([bounds[2], bounds[3]], 'EPSG:3857', 'EPSG:4326'),
         bbox = [lb[0], lb[1], rt[0], rt[1]];
-
+      
+      if(view.getResolution()>20) {
+        return;
+      }
+      source.clear();
       features((fc) => {
         source.addFeatures(format.readFeatures(fc));
         const extent = source.getExtent();
