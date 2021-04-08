@@ -1,9 +1,10 @@
 import 'ol/ol.css';
 import FullScreen from 'ol/control/FullScreen';
-import apply from 'ol-mapbox-style';
+import apply from './mbox-apply';
 import Map from 'ol/Map';
 import featuresStyle from './data/style.json';
 import GeoJSON from 'ol/format/GeoJSON';
+
 import { features } from './features';
 import { transform } from 'ol/proj';
 
