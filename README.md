@@ -1,3 +1,3 @@
 # kiinteistojaotus-geojson-stylejson
 
-poc for feature html with embedded map with geojson location data  
+poc for generated feature html with embedded map with geojson location data  
